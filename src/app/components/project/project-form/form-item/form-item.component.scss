@@ -1,0 +1,28 @@
+@import '/src/styles/variables';
+
+:host {
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin: 0 5px 10px;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.item-title {
+  color: $primary-color;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.item-data {
+  border: none;
+  padding: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.item-data:focus {
+  outline: none;
+  border-bottom-style: groove;
+  background-color: #eee;
+}

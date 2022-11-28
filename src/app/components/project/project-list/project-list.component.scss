@@ -1,0 +1,17 @@
+@import '/src/styles/variables';
+
+:host {
+  height: 408px;
+  border: $primary-color solid 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(82px);
+  scroll-snap-type: y mandatory;
+}
+
+:host::-webkit-scrollbar {
+  width: 0
+}

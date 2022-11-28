@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  margin: 0 1.5rem;
+  padding: 0;
+  cursor: pointer;
+  height: 22px;
+}
+
+.active-link {
+  border-bottom: 2px solid black;
+}

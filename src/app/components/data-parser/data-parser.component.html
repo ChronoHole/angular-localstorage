@@ -1,0 +1,5 @@
+<div class="data-parser">
+  <label for="textbox" class="label">Введите JSON:</label>
+  <textarea [(ngModel)]="data" class="json-area"></textarea>
+  <app-button [label]="label" (onClick)="onSave()"></app-button>
+</div>

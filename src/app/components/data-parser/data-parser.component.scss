@@ -1,0 +1,13 @@
+@import '/src/styles/variables';
+
+.label {
+  font-size: 1.1rem;
+}
+
+.json-area {
+  resize: none;
+  width: 100%;
+  border-color: $primary-color;
+  border-width: 2px;
+  height: 14rem;
+}

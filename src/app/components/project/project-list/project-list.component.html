@@ -1,0 +1,10 @@
+<ng-container *ngFor="let project of projects$ | async">
+  <app-list-item
+    [headerTitle]="project.endDate"
+    [title]="project.subject"
+    [subTitle]="project.createdBy"
+    [routerLink]="['/projects', project.id]"
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }"
+  ></app-list-item>
+</ng-container>

@@ -1,0 +1,22 @@
+<div class="project-form-container">
+  <div *ngIf="project; else no_project">
+    <h3 class="project-subject">{{ project.subject }}</h3>
+    <div class="project-grid">
+      <app-form-item
+        title="Дата начала"
+        [data]="project.startDate"
+      ></app-form-item>
+      <app-form-item
+        title="Дата окончания"
+        [data]="project.endDate"
+      ></app-form-item>
+      <app-form-item title="Автор" [data]="project.createdBy"></app-form-item>
+      <app-form-item
+        title="Описание"
+        [data]="project.description ? project.description : ''"
+      ></app-form-item>
+    </div>
+    <app-button [label]="label" (onClick)="onChange()"></app-button>
+  </div>
+  <ng-template #no_project>NO PROJECT</ng-template>
+</div>
